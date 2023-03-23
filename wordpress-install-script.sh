@@ -11,9 +11,9 @@ sudo apt-get install lamp-server^ -y
 read -p "Enter MySQL root password: " mysql_root_password
 
 # Prompt user for database name, username, and password
-read -p "Enter database name: " db_name
-read -p "Enter database username: " db_user
-read -s -p "Enter database password: " db_password
+read -p "Enter database name for the website: " db_name
+read -p "Enter database user(name): " db_user
+read -s -p "Enter database password for user: " db_password
 
 # Create database and user
 sudo mysql -u root -p$mysql_root_password <<EOF
